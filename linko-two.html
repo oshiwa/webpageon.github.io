@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@200;300;400;500;600;700&family=Poppins&family=Amarante&family=Alegreya+Sans+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background: linear-gradient(to top, #222, #111);
+    font-family: Poppins;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.bio-container{
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.profile{
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 50%;
+}
+.profile img{
+    width: 100%;
+    height: auto;
+}
+.about-me{
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.about-me span{
+    color: #888;
+}
+.about-me h3{
+    padding: 14px;
+}
+.about-me p{
+    font-size: 12px;
+}
+.my-links{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    text-align: center;
+    padding: 14px;
+}
+.my-links a{
+    text-align: center;
+    margin: 10px;
+    width: auto;
+}
+.my-links button:hover{
+    background: crimson;
+}
+.my-links button{
+    width: 95%;
+    padding: 12px;
+    background: #000;
+    box-shadow: 1px 1px 3px 1px #000;
+    font-family: Poppins;
+    font-size: 12px;
+    border-radius: 10px;
+    border: solid #333;
+    color: #fff;
+}
+ .contact-me{
+     display: grid;
+     grid-template-columns: auto;
+     width: 90%;
+     margin: auto;
+     margin-top: 15px;
+ }
+ .contact-me form{
+     display: grid;
+     width: 90%;
+     margin: auto;
+     font-size: 14px;
+     box-shadow: 1px 1px 3px 1px #000;
+     color: #fff;
+     padding: 20px;
+     border-radius: 5px;
+ }
+ .contact-me input, .contact-me textarea{
+     padding: 4px;
+     background: #000;
+     outline: none;
+     border: none;
+     color: #fff;
+     border-radius: 5px;
+ }
+ .contact-me label{
+     padding: 8px 4px;
+     color: #fff;
+ }
+ .contact-me h2{
+     padding: 10px;
+     text-align: center;
+     background: #537895;
+     width: 85%;
+     margin: auto;
+     margin-bottom: 10px;
+     color: #fff;
+ }
+ .my-copyright{
+     text-align: center;
+     color: #fff;
+     margin-top: 30px;
+ }
+ .my-copyright h3{
+     padding: 14px;
+ }
+ @media screen and (min-width: 700px){
+     html{
+         height: 100%;
+     }
+     body{
+         display: grid;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         height: 100%;
+     }
+     .bio-container, .contact-me{
+         width: 100vw;
+     }
+     .profile{
+         width: 350px;
+         height: 350px;
+     }
+ }
+        </style>
+    </head>
+    <body>
+    <div class="bio-container">
+        <div class="profile">
+        <img src="images/profile.jpg">
+        </div>
+        <div class="about-me">
+            <h3>I am <span>Name</span> an <span>Artist</span></h3>
+            <p>This is my tagline and it is optional</p>
+        </div>
+        <div class="my-links">
+            <a href=""><button>Facebook</button></a>
+            <a href=""><button>Youtube</button></a>
+            <a href=""><button>Instagram</button></a>
+            <a href=""><button>Twitter</button></a>
+        </div>
+        <div class="contact-me">
+            <form>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" required style="padding: 10px">
+                <label for="message">Message:</label>
+                <textarea type="text" name="Message" rows="8" required></textarea>
+                <input type="submit" value="Send Message" style="margin-top: 3.5px; padding: 6px; font-size: 12px; font-family: Poppins">
+            </form>
+        </div>
+        <div class="my-copyright">
+            <h3>© Name</h3>
+        </div>
+    </div>
+    </body>
+</html>
